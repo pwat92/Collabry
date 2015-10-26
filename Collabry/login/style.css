@@ -1,0 +1,37 @@
+
+body{
+	
+	 background-image: url("img/background.png") !important;
+	}
+
+.col-md-5{
+	margin-top: 70px;
+	margin-bottom: 50px;
+	height: 500px;
+	margin-right: 5px; 
+	margin-left: 5px;
+	padding: 20px;
+	border-spacing: 10px
+	border-color: transparent; 
+	border-radius: 15px;
+	color: white;
+	background-color: black;
+
+}
+.col-md-5 img{
+	height: 150px;
+	width: 375px;
+}
+
+#info{
+	opacity: .35;
+}
+
+#login{
+	opacity: .75;
+}
+.loginform{
+	padding-top:225px;
+}
+
+

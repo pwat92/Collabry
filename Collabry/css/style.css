@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arvo', sans serif !important;
+    color: white !important;
+    font-size: 45px !important;
+    padding: 0px !important;
+}
+
+.navbar-brand{
+	float: right !important;
+
+}
+.col-md-6{
+	position:absolute;
+	z-index: 2;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #B8B8B8;
+	height: 450px;
+	color: #191919;
+	box-shadow: 2.5px 2.5px 5px 2.5px #B8B8B8;
+    padding: 0px !important;
+}
+.updates{
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #B8B8B8;
+    margin-top: 375px;
+    height: 75px;
+    box-shadow: -0px -5px 5px -2.5px #B8B8B8;
+}
+.logo{
+	width: 400px;
+	height: 100px;
+
+	
+}
+.navbar-dtn{
+	border-radius: 10px;
+	margin-left: 5px;
+	color: black;
+	
+}
+.glyphicon-menu-hamburger{
+	color: white;
+	margin: 5px;
+	font-size: 60px;
+}
+
+#barnav{
+	position:fixed;
+	z-index: 1;
+	background-color: #5bc5ff  !important;
+	height: 75px;
+	box-shadow: 5px 5px 10px 2.5px #B8B8B8;
+	text-align: center;
+	
+}
+li{
+	font-size: 35px;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+
+}
+.navbar-brand{
+	height: 77px !important;
+	width: 200px !important;
+}
+h2 b{
+	font-size: 21px;
+}
+
+
+
+
+
+
