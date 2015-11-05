@@ -11,20 +11,17 @@
 	<link rel="apple-touch-icon" sizes="144x144" href="img/appiconxl.png" />
 	<!--angular-->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+	<script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
 	<!--modules-->
 	<script src="js/modules/app.js"></script>
 	<!--controllers-->
-	<script src="js/controllers/maincontroller.js"></script>
-	<script src="js/controllers/facebookcontroller.js"></script>
-    <script src="js/controllers/googlecontroller.js"></script>
-    <script src="js/controllers/AppsController.js"></script>
+
 	<!--Directives-->
 	<script src="js/directives/appsum.js"></script>
 	<!--jQuery-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.3.4/css/jquery.mmenu.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.3.4/css/extensions/jquery.mmenu.themes.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.3.4/js/jquery.mmenu.min.js"></script>
+	<!--javascript-->
+	
 	<!--css-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
     <!--bootstrap-->
@@ -32,59 +29,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-    <script>
-		$(document).ready(function(){
-			$("#menu").mmenu({
-				extensions: ["theme-white"],
-				 navbar: {
-       				 title: ""
-   					 }
-
-			});
-			var API = $('#menu').data("mmenu");
-
-			$("#menu-button").click(function(){
-				API.open();
-			});
-		});
-	</script>
-</head>
-
+   
 
 <body ng-app="collabry">
-
 <br />
 <br />
-<div data-ng-view></div>
+<div ng-view>
+	
+</div>
+ 
 
 
-
-
-
-<div class="wrapper">
-<nav id="menu">
-  <ul ng-controller="mainController">
-   	<li>
-   		<span>
-   			<br />
-            <center><img src="img/Logothinlight.png" height="110px" width="340px" />
-            <br />
-			<br />
-            {{currentProject | uppercase}}
-			<br />
-			<br /></center>
-         </span>
-   	</li>
-   	<li>Home</li>
-    <li>My Projects
-		<ul>
-            <li ng-repeat="name in projects">{{ name | uppercase}}</li>
-         </ul>
-    </li>
-   	<li><span>Group Members</span></li>
-   	<li><a href="#">Contact</a></li>
-  </ul>
-</nav>
 		<!--navbar -->
 
 	<div id = "barnav" class="navbar-fixed-top" ng-controller="mainController">
@@ -93,13 +48,11 @@
 				<div class="col-xs-2"><span id="menu-button" class="glyphicon glyphicon-menu-hamburger"></span></div>
 				<div class="col-xs-1"></div>
 				<div class="col-xs-1"></div>
-				<div class="col-xs-4">{{currentProject | uppercase}}</div>
-				<div class="col-xs-1"></div>
-				<div class="col-xs-3"><img class="navbar-brand" src=img/brand.png></div>
+				<div class="col-xs-4">current project</div>
+				<div class="col-xs-4"></div>
 			</div>
 		</div>
 
 	</div>
-</div>
 </body>
 </html>

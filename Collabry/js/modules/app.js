@@ -1,11 +1,7 @@
-var collabry = angular.module("collabry", ['ngRoute']);
-collabry.config(function($routeProvider){
-    $routeProvider
-        .when('/', {
-            controller: 'appsController',
-            templateURL:'views/main.html'
-        }),
-        .otherwise({
-        redirectTo: '/'
-    });
-});
+var app = angular.module("collabry", ['ngRoute']);
+app.config(function($routeProvider){
+		$routeProvider.when('/', {
+    	//controller: 'notificationcontroller', not made yet, trying to get routes working first
+      	templateURL: 'views/notifications.html'
+    })
+})
